@@ -20,6 +20,40 @@
     border: 1px solid #D1D1D1;
     margin-bottom: 26px;
  }
+
+
+ /* ------------
+    Header option
+------------------- */
+.header{
+    background-color: #FFC014;
+    width: 1440px;
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+}  
+
+.my-head{
+    
+   display: flex;
+   gap: 40px;
+   padding: 30px 0px 15px 240px;
+    
+    
+   }
+   .my-head img{
+    width: 45px;
+    height: 50px;
+   }
+  
+   .second{
+    margin-right: 335px;
+    margin-top: 22px;
+    display: flex;
+    gap: 50px;
+   }
+
+
 /* top players style */
 
 .top-players{
@@ -133,7 +167,23 @@ height: 104px;
      mobile screen
  --------------------     */
 @media only screen and (max-width:688px) {
+  
     
+        
+    .header{width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+    }
+    .my-head{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+        padding: 0px;
+    }
+    .second{
+        display: grid;
+        grid-template-rows: repeat(1,1fr);
+    }
     .container{
         width: 100%;
     }
@@ -150,7 +200,22 @@ height: 104px;
   tab screen
 --------------- */
 @media only screen and (min-width:688px) and (max-width:992px){
-    
+   
+    .header{width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns;: repeat(2,1fr);
+    }
+    .my-head{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+   
     .container{
         width: 100%;
     }
